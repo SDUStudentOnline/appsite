@@ -26,8 +26,12 @@
   font-weight: bold;
   display: flex;
   align-items: center;
-  margin-top: -30px;
+  margin-top: -40px;
   margin-left: -30px;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  padding: 10px 0;
 }
 .title > a {
   text-decoration: none;
@@ -36,7 +40,7 @@
   margin-right: 10px;
 }
 .title img {
-  width: 40px;
+  width: 30px;
 }
 
 .privacy-content > ol {
@@ -58,8 +62,8 @@
     border-radius: 0;
   }
   .title {
-    margin-top: -20px;
-    margin-left: -20px;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 

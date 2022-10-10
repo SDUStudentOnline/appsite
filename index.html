@@ -11,7 +11,8 @@
   <script>
     window.onload = () => {
       axios.get('isduapi/api/common/app_version/latest').then(res => {
-        let data = res.data
+        if (res.data.code) return
+        let data = res.data.data
         /*
           versionCode	Integer	
           versionName	String	

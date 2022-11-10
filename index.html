@@ -7,25 +7,6 @@
   <meta content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" name="viewport">
   <link rel="stylesheet" href="css/tidy.css">
   <link rel="icon" href="img/ic_launcher.png">
-  <script src="https://cdn.bootcdn.net/ajax/libs/axios/1.1.2/axios.min.js"></script>
-  <script>
-    window.onload = () => {
-      axios.get('isduapi/api/common/app_version/latest').then(res => {
-        if (res.data.code) return
-        let data = res.data.data
-        /*
-          versionCode	Integer	
-          versionName	String	
-          versionLog	String	
-          downloadLink	String	
-          updateTime	String	
-          channel
-        */
-        let androidBtn = document.getElementById('android')
-        androidBtn.href = data.downloadLink
-      })
-    }
-  </script>
 </head>
 
 <body>
@@ -41,9 +22,6 @@
           <span class="text-subtitle">山东大学学生在线</span>
           <br />
           <a class="btn" href="privacy.html">隐私政策</a>
-          <a class="btn" id="android" href="#">安卓下载</a>
-          <br />
-          <a class="btn" href="https://testflight.apple.com/join/5zOM86dt">iOS TestFlight下载</a>
         </div>
       </div>
     </div>
